@@ -33,7 +33,10 @@ def transform_data(df):
     columns_to_remove = [col for col in df.columns if col.endswith('F')]
     df = df.drop(columns=columns_to_remove)
 
+    df.fillna(0, inplace=True)
+
     return df
+
 
 #Cargar archivo
 def load_processed_data(df, output_path):
