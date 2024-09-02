@@ -76,3 +76,5 @@ print(df_final)
 #Carga el producto de la transformación
 load_processed_data(df_final, "processed_data/combined_data.csv")
 
+###DUDA!! Se puede llamar a el procesamiento de la notebook en este mismo archivo??
+
